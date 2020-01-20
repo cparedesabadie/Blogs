@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+    <meta name='mobile-web-app-capable' content='yes'>
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/estilos.css'>
+    <script src='js/bootstrap.min.js'></script>
     <title>Blog de Musica</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
   </head>
   <body>
-    <header class="container" style="background-color:white">
-      <img src="image/logo.jpg" alt="Logo" class="imagen" height="200px"/>
-      <div class="row" style="background-color:#ffb74d">
+    <header class="container">
+      <div class="row">
+        <img src="image/logo.jpg" alt="Logo" class="imagen" height="180px"/>
+        <div class='redes-sociales'>
+          <img class='img-rounded img-social' src='image/fb.png'/>
+          <img class='img-rounded img-social' src='image/ig.png'/>
+          <img class='img-rounded img-social' src='image/tt.png'/>
+          <img class='img-rounded img-social' src='image/yt.png'/>
+        </div>
+      </div>
+      <div class="row justify-content-center py-2" style="background-color:black">
         <nav>
-          <a href="index.html" class="col-lg-2">Inicio</a>
-          <a href="" class="col-lg-2">Artistas</a>
-          <a href="" class="col-lg-2">Grupos</a>
-          <a href="" class="col-lg-2">Top 10</a>
-          <a href="" class="col-lg-2">Letras</a>
-          <a href="" class="col-lg-2">Acordes</a>
+          <a class="btn btn-info" href="#" role="button">Inicio</a>
+          <a class="btn btn-info" href="#" role="button">Noticias</a>
+          <a class="btn btn-info" href="#" role="button">Artistas</a>
+          <a class="btn btn-info" href="#" role="button">Letras</a>
+          <a class="btn btn-info" href="#" role="button">Eventos</a>
+          <a class="btn btn-info" href="#" role="button">Top 10</a>
         </nav>
       </div>
     </header>
     <section>
         <div class="container">
           <div class="row">
-            <div class="col-lg-9" style="background-color:#ffe082">
+            <div class="col-lg-9" style="background-color:#e0f2f1">
               <div class="row">
                 <div class="col-lg-8">
                   <h2>Música: una extensión de la inteligencia para los niños</h2>
@@ -44,7 +55,10 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-8">
+                <textarea name="comentario" rows="2" cols="80" class="form-control" placeholder="Comentario..."></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-8">
                   <h2>El Jazz De Las Ballenas Boreales</h2>
                   <p class="text-justify">
                     Hasta ahora sabíamos que las ballenas cantan, pero recientemente se ha descubierto que lo hacen distinguiendo
@@ -54,15 +68,21 @@
                     diverso y con patrones de improvisación jazzísticos.
                   </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-md-4">
                   <img src="image/ballena2.jpg" alt="Ballena" class="imagen" width="200px"/>
                 </div>
+              </div>
+              <div class="row">
+                <textarea name="comentario" rows="2" cols="80" class="form-control" placeholder="Comentario..."></textarea>
               </div>
             </div>
 
 
-            <div class="col-lg-3" style="background-color:#ffecb3">
-              <p>Busqueda</p>
+            <div class="col-lg-3" style="background-color:#b2dfdb">
+              <form class="form-inline">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar..." aria-label="Search">
+              </form>
             </div>
           </div>
         </div>
