@@ -1,1 +1,23 @@
-
+.post-row{
+  padding: 20px;
+}
+.imagen-post{
+  width: 100%;
+}
+textarea{
+  margin-top: 20px;
+}
+.img-social{
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 18%;
+}
+.nav-item{
+  margin: 10px;
+}
+.imagen-logo{
+  width: 25%;
+}
+.buscar{
+  margin-top: 20px;
+}

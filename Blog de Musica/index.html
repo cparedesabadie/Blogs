@@ -9,34 +9,34 @@
     <script src='js/bootstrap.min.js'></script>
     <title>Blog de Musica</title>
   </head>
-  <body>
+  <body class="blog-body">
     <header class="container">
-      <div class="row">
-        <img src="image/logo.jpg" alt="Logo" class="imagen" height="180px"/>
-        <div class='redes-sociales'>
-          <img class='img-rounded img-social' src='image/fb.png'/>
-          <img class='img-rounded img-social' src='image/ig.png'/>
-          <img class='img-rounded img-social' src='image/tt.png'/>
-          <img class='img-rounded img-social' src='image/yt.png'/>
+      <div class="row justify-content-between align-items-end">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <img src="image/logo.jpg" alt="Logo" class="rounded imagen-logo"/>
+        </div>
+        <div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>
+          <a href="#"><img class='rounded img-social' src='image/fb.png'/></a>
+          <a href="#"><img class='rounded img-social' src='image/ig.png'/></a>
+          <a href="#"><img class='rounded img-social' src='image/tt.png'/></a>
+          <a href="#"><img class='rounded img-social' src='image/yt.png'/></a>
         </div>
       </div>
-      <div class="row justify-content-center py-2" style="background-color:black">
-        <nav>
-          <a class="btn btn-info" href="#" role="button">Inicio</a>
-          <a class="btn btn-info" href="#" role="button">Noticias</a>
-          <a class="btn btn-info" href="#" role="button">Artistas</a>
-          <a class="btn btn-info" href="#" role="button">Letras</a>
-          <a class="btn btn-info" href="#" role="button">Eventos</a>
-          <a class="btn btn-info" href="#" role="button">Top 10</a>
-        </nav>
-      </div>
+      <nav class="nav nav-pills nav-justified">
+        <a class="nav-item nav-link btn-info" href="#">Inicio</a>
+        <a class="nav-item nav-link btn-info" href="#">Noticias</a>
+        <a class="nav-item nav-link btn-info" href="#">Artistas</a>
+        <a class="nav-item nav-link btn-info" href="#">Letras</a>
+        <a class="nav-item nav-link btn-info" href="#">Eventos</a>
+        <a class="nav-item nav-link btn-info" href="#">Top 10</a>
+      </nav>
     </header>
     <section>
         <div class="container">
           <div class="row">
             <div class="col-lg-9" style="background-color:#e0f2f1">
-              <div class="row">
-                <div class="col-lg-8">
+              <div class="row post-row">
+                <div class="post col-lg-8 col-md-8 col-sm-12 col-xs-12">
                   <h2>Música: una extensión de la inteligencia para los niños</h2>
                   <p class="text-justify">
                     Se le atribuye a Platón la frase de que “la música es para el alma lo que la gimnasia es para el cuerpo”.
@@ -45,20 +45,19 @@
                     más aún cuando éstos son motivados a aprender a tocar un instrumento.
                     Los expertos aconsejan que los padres enseñen a sus hijos a comunicar sus emociones a través de la voz.
                     Para llevar a cabo este paso es importante proponer juegos; uno de ellos es motivar al niño a que imite sonidos.
-                    En este periodo es indispensable regalarle instrumentos de juguete con los que pueda explorar diferentes clases de sonidos,
-                    ya sean de percusión, de viento o de cuerdas.
                     Los niños con estos juegos desarrollan su inteligencia musical permitiéndoles madurar talentos que pueden ser muy útiles a lo largo de su vida.
                   </p>
                 </div>
-                <div class="col-lg-4">
-                  <img src="image/ninia2.png" alt="Ninia" class="imagen" width="250px"/>
+                <div class="post-img col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <img src="image/ninia.png" alt="Ninia" class="rounded imagen-post"/>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <textarea name="comentario" rows="2" cols="80" class="form-control" placeholder="Comentario..."></textarea>
                 </div>
               </div>
-              <div class="row">
-                <textarea name="comentario" rows="2" cols="80" class="form-control" placeholder="Comentario..."></textarea>
-              </div>
-              <div class="row">
-                <div class="col-md-8">
+
+              <div class="row post-row">
+                <div class="post col-lg-8 col-md-8 col-sm-12 col-xs-12 order-2">
                   <h2>El Jazz De Las Ballenas Boreales</h2>
                   <p class="text-justify">
                     Hasta ahora sabíamos que las ballenas cantan, pero recientemente se ha descubierto que lo hacen distinguiendo
@@ -68,21 +67,37 @@
                     diverso y con patrones de improvisación jazzísticos.
                   </p>
                 </div>
-                <div class="col-md-4">
-                  <img src="image/ballena2.jpg" alt="Ballena" class="imagen" width="200px"/>
+                <div class="post-img col-lg-4 col-md-4 col-sm-12 col-xs-12 order-1">
+                  <img src="image/ballena.jpg" alt="Ballena" class="rounded imagen-post"/>
                 </div>
-              </div>
-              <div class="row">
-                <textarea name="comentario" rows="2" cols="80" class="form-control" placeholder="Comentario..."></textarea>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 order-12">
+                  <textarea name="comentario" rows="2" cols="80" class="form-control" placeholder="Comentario..."></textarea>
+                </div>
               </div>
             </div>
 
 
             <div class="col-lg-3" style="background-color:#b2dfdb">
-              <form class="form-inline">
-                <i class="fas fa-search" aria-hidden="true"></i>
-                <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar..." aria-label="Search">
+              <form class="buscar" action="index.html" method="post">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Buscar..." aria-label="Username" aria-describedby="basic-addon1">
+                </div>
               </form>
+              <ul class="list-group">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+              </ul>
             </div>
           </div>
         </div>
