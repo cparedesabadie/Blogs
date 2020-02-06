@@ -9,7 +9,7 @@
 }
 
 .grid-container{
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(255,255,255,0.7);
 }
 
 .columna-izquierda{
@@ -21,3 +21,67 @@
   background-color: rgba(232,232,232,1);
   border: none;
 }
+
+.menu-item{
+  margin: 3px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a;
+}
+
+.list-group {
+  margin: 3px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background: #fefefe;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a;
+}
+.list-group-item {
+  padding: 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.nombre-blog{
+  font-family: 'Rubik Mono One', sans-serif;
+  text-align: center;
+}
+
+.slogan{
+  text-align: right;
+}
+
+.subtitulo{
+  font-family: 'Gochi Hand', cursive;
+}
+
+p{
+  font-family: 'Gochi Hand', cursive;
+  font-size: 18px;
+}
+a{
+  font-family: 'Gochi Hand', cursive;
+  font-size: 20px;
+}
+
+.img-post{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.img-usuario{
+  width: 10%;
+  padding-right: 10px;
+}
+.button{
+  background-color: white;
+  color: black;
+  }
+
+  .button-group{
+    margin: 15px;
+  }
