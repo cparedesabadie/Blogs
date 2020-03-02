@@ -1,5 +1,5 @@
-#principal {
-  background-image: url(../img/Fondo.jpg);
+#principal{
+  background-image: url(../img/Fondo.jpg), url(../img/Fondo2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,7 @@
   text-align: justify;
 }
 .comentario{
-  background-color: white;
+  background-color: #f1f8e9;
   margin-top: 2%;
   padding-top: 1%;
 }
